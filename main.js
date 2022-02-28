@@ -36,7 +36,8 @@ const time = document.querySelector(".timer");
 
       }
       function reset() {
-        const resetTimer = confirm("are you sure to reset the timer!")
+       if(seconds!=0){
+ const resetTimer = confirm("are you sure to reset the timer!")
         if(resetTimer){
           stop();
           seconds = 0;
@@ -45,4 +46,4 @@ const time = document.querySelector(".timer");
           time.textContent = "00:00:00"
 
         }
-      }
+      }}
